@@ -1,44 +1,38 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #4CAF50;
-    padding: 20px;
-    color: white;
     text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
     padding: 20px;
 }
 
-.server {
-    background-color: white;
+.container {
+    background: white;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background: #007BFF;
     color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-p {
+button:hover {
+    background: #0056b3;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
     margin: 10px 0;
-}
-
-#server-status {
-    font-weight: bold;
 }
