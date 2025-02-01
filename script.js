@@ -57,3 +57,11 @@ function lookupBIN() {
             document.getElementById("binResult").textContent = "BIN lookup failed!";
         });
 }
+
+// BIN Generator
+function generateBIN() {
+    const issuers = ["4", "5", "6", "37", "60", "35"]; // Examples of prefixes
+    let randomIssuer = issuers[Math.floor(Math.random() * issuers.length)];
+    let bin = randomIssuer + Math.floor(Math.random() * 1e4).toString().padStart(4, "0");
+    document.getElementById("generatedBIN").textContent = "Generated BIN: " + bin;
+}
