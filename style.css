@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #2C3E50; /* Dark background */
-    color: #ECF0F1;
+    background: #F7F7F7; /* Light background */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,12 +16,12 @@ body {
 }
 
 .container {
-    background: #34495E; /* Dark grayish-blue */
+    background: #ffffff; /* White background */
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -32,7 +32,7 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ECF0F1;
+    color: #2C3E50; /* Dark blue-gray */
     text-align: center;
     font-weight: 600;
     letter-spacing: 1px;
@@ -42,12 +42,12 @@ h1 {
 h2 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    color: #3498DB;
+    color: #1ABC9C; /* Light teal */
     font-weight: 500;
 }
 
 button {
-    background-color: #3498DB;
+    background-color: #1ABC9C; /* Teal color */
     color: white;
     padding: 12px 25px;
     border: none;
@@ -58,30 +58,30 @@ button {
 }
 
 button:hover {
-    background-color: #2980B9;
-    transform: translateY(-2px); /* Slightly elevate button on hover */
+    background-color: #16A085; /* Darker teal on hover */
+    transform: translateY(-2px); /* Slight elevation on hover */
 }
 
 input, select {
     padding: 12px;
     width: 80%;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #BDC3C7; /* Light gray border */
     border-radius: 8px;
-    background: #34495E;
-    color: #ECF0F1;
+    background: #ECF0F1; /* Light background for inputs */
+    color: #333;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 input:focus, select:focus {
-    border-color: #3498DB;
+    border-color: #1ABC9C; /* Green focus border */
     outline: none;
 }
 
 .card-result {
     margin-top: 15px;
-    color: #ECF0F1;
+    color: #2C3E50; /* Dark blue-gray */
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.5px;
