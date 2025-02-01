@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Server Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CC Generator & Checker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Minecraft Servers</h1>
-    </header>
+    <div class="container">
+        <h1>Credit Card Generator & Validator</h1>
 
-    <main>
-        <section class="server">
-            <h2>My Awesome Server</h2>
-            <p>IP: <span id="server-ip">example.minecraft.com</span></p>
-            <p>Description: A fun survival Minecraft server.</p>
-            <p>Status: <span id="server-status">Loading...</span></p>
-        </section>
-    </main>
+        <!-- Card Generator Section -->
+        <h2>Generate a Card</h2>
+        <button onclick="generateCard()">Generate</button>
+        <p id="generatedCard"></p>
 
-    <footer>
-        <p>&copy; 2024 Minecraft Server Showcase</p>
-    </footer>
+        <!-- Card Validator Section -->
+        <h2>Validate a Card</h2>
+        <input type="text" id="cardInput" placeholder="Enter Card Number">
+        <button onclick="validateCard()">Check</button>
+        <p id="validationResult"></p>
+
+        <!-- BIN Lookup Section -->
+        <h2>BIN Lookup</h2>
+        <input type="text" id="binInput" placeholder="Enter BIN (First 6 Digits)">
+        <button onclick="lookupBIN()">Lookup</button>
+        <p id="binResult"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
